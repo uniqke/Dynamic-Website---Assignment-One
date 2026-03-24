@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header class="bg-dark text-white py-4 shadow">
+    <div class="container text-center">
+      <h1 class="fw-bold">Dynamic Websites & Applications</h1>
+      <h4 class="text-warning">Module 1 – Question 2</h4>
+
+      <hr class="bg-light">
+
+      <p class="mb-1"><strong>Student Name:</strong> Alcardo Terlonge</p>
+      <p class="mb-0"><strong>Lecturer:</strong> __________________________</p>
+    </div>
+  </header>
+
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+  <div class="card shadow-lg p-4 text-center" style="width: 400px;">
+    <h1 class="mb-3 text-primary">Question two</h1>
+    <h3 class="text-primary mb-3">User Information</h3>
+    
+    <p class="text-muted">Click the button to enter your details.</p>
+    
+    <button class="btn btn-success w-100" onclick="collectInfo()">
+      Enter Details
+    </button>
+    
+  </div>
+
+  <script>
+    function collectInfo() {
+      let firstName, lastName, age;
+
+      firstName = prompt("Enter your first name:");
+      lastName = prompt("Enter your last name:");
+      age = prompt("Enter your age:");
+
+      alert(`Name: ${firstName} ${lastName}\nAge: ${age}`);
+    }
+  </script>
+
+</body>
+</html>

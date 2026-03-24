@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 12</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <header class="bg-dark text-white py-4 shadow">
+    <div class="container text-center">
+      <h1 class="fw-bold">Dynamic Websites & Applications</h1>
+      <h4 class="text-warning">Module 1 – Question 12</h4>
+
+      <hr class="bg-light">
+
+      <p class="mb-1"><strong>Student Name:</strong> Alcardo Terlonge</p>
+      <p class="mb-0"><strong>Lecturer:</strong> __________________________</p>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="card shadow-lg p-4 text-center">
+
+      <h3 class="text-primary mb-4">
+        Remove a Paragraph from the DOM
+      </h3>
+
+
+      <p id="demo" class="lead">
+        Click the button below, and this paragraph will be removed from the DOM.
+      </p>
+
+
+      <button class="btn btn-danger px-4" onclick="myFunction()">
+        Remove Paragraph
+      </button>
+
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      let element = document.getElementById("demo");
+      if (element) {
+        element.remove();
+      }
+    }
+  </script>
+
+</body>
+</html>
